@@ -117,7 +117,7 @@ select {
     border: none;
     display: inline-block;
     text-align: center;
-    background-color: none;
+    background-color: red;
 }
 
 
