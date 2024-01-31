@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.container {
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: blueviolet;
+}
+
+
+.converter {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid rgb(216, 206, 206);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.width {
+    width: 100%;
+}
+
+.main-converter>* {
+    margin-top: 20px;
+}
+
+.searchbar {
+    position: relative;
+    border-bottom: 2px solid rgba(137, 43, 226, 0.562);
+}
+
+.searchbar input {
+    border: none;
+    padding: 10px;
+    outline: none;
+    font-size: 1.1rem;
+    width: 100%;
+
+
+}
+
+.searchbar label {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    transition: .2s ease-in;
+    background: transparent;
+
+}
+
+.searchbar>input:focus+label {
+    top: 0;
+    transform: translateY(-50%);
+    background-color: #fff;
+    font-size: .8rem;
+
+    z-index: 100;
+    color: blueviolet
+}
+
+input:not(:placeholder-shown)+label {
+    top: 0;
+    transform: translateY(-50%);
+    background-color: #fff;
+    font-size: .8rem;
+
+    z-index: 100;
+    color: blueviolet
+}
+
+.output {
+    padding: 10px;
+    border-bottom: 2px solid #8f4e4e;
+    border-bottom: 2px solid rgba(137, 43, 226, 0.58);
+}
+
+.fromtoto>* {
+    margin-top: 15px;
+
+}
+
+.dropdownfrom,
+.dropdownto {
+    padding-inline: 10px;
+    margin-top: 15px;
+    border-bottom: 2px solid rgba(137, 43, 226, 0.482);
+    display: flex;
+
+}
+
+.exchange {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 30px;
+
+}
+
+.exchange i {
+    cursor: pointer;
+}
+
+select {
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    display: inline-block;
+    text-align: center;
+}
+
+
+
+.convert>button {
+    font-size: 1.2rem;
+    border: none;
+    padding: 10px;
+    background-color: rgba(137, 43, 226, 0.55);
+    color: #fff;
+    cursor: pointer;
+}
+
+.convert>button:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: blueviolet;
+}
